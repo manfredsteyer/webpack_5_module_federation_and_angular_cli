@@ -7,16 +7,16 @@ import { Component, ViewChild, ViewContainerRef, ɵrenderComponent as renderComp
 export class AppComponent {
   title = 'shell';
 
-  @ViewChild('vc', { read: ViewContainerRef, static: true })
-  viewContainer: ViewContainerRef;
+  // @ViewChild('vc', { read: ViewContainerRef, static: true })
+  // viewContainer: ViewContainerRef;
 
-  constructor(
-    @Inject(Injector) private injector,
-    @Inject(ComponentFactoryResolver) private cfr) { }
+  // constructor(
+  //   @Inject(Injector) private injector,
+  //   @Inject(ComponentFactoryResolver) private cfr) { }
 
-    home(): void {
-      this.viewContainer.clear();
-    }
+    // home(): void {
+    //   this.viewContainer.clear();
+    // }
 
     load() {
       // const comp = await import('mfe1/Component').then(m => {

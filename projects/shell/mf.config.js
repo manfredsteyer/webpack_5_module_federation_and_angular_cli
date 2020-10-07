@@ -4,9 +4,9 @@ exports.default = {
     config: function(config) {
 
         config.output.publicPath = 'http://localhost:5000/';
-        
+        config.output.uniqueName = 'shell';
+
         config.plugins.unshift(new ModuleFederationPlugin({
-            name: "shell",
             remotes: {
               mfe1: "mfe1@http://localhost:3000/remoteEntry.js" 
             },

@@ -24,7 +24,6 @@
               "projects/mfe1/src/assets"
             ],
             "styles": [
-              "projects/mfe1/src/styles.css"
             ],
             "scripts": []
           },
@@ -202,7 +201,6 @@
               "projects/shell/src/assets"
             ],
             "styles": [
-              "projects/shell/src/styles.css"
             ],
             "scripts": []
           }
