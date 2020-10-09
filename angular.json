@@ -19,6 +19,7 @@
             "polyfills": "projects/mfe1/src/polyfills.ts",
             "tsConfig": "projects/mfe1/tsconfig.app.json",
             "aot": true,
+            "plugin": "~projects/mfe1/mf.config.js",
             "assets": [
               "projects/mfe1/src/favicon.ico",
               "projects/mfe1/src/assets"
@@ -60,7 +61,9 @@
         "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
-            "browserTarget": "mfe1:build"
+            "browserTarget": "mfe1:build",
+            "plugin": "~projects/mfe1/mf.config.js",
+            "port": 3000
           },
           "configurations": {
             "production": {
@@ -134,6 +137,7 @@
             "polyfills": "projects/shell/src/polyfills.ts",
             "tsConfig": "projects/shell/tsconfig.app.json",
             "aot": true,
+            "plugin": "~projects/shell/mf.config.js",
             "assets": [
               "projects/shell/src/favicon.ico",
               "projects/shell/src/assets"
@@ -175,7 +179,9 @@
         "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
-            "browserTarget": "shell:build"
+            "browserTarget": "shell:build",
+            "plugin": "~projects/shell/mf.config.js",
+            "port": 5000
           },
           "configurations": {
             "production": {
