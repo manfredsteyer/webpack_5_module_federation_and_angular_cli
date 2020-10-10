@@ -24,8 +24,7 @@
               "projects/mfe1/src/favicon.ico",
               "projects/mfe1/src/assets"
             ],
-            "styles": [
-            ],
+            "styles": [],
             "scripts": []
           },
           "configurations": {
@@ -142,8 +141,7 @@
               "projects/shell/src/favicon.ico",
               "projects/shell/src/assets"
             ],
-            "styles": [
-            ],
+            "styles": [],
             "scripts": []
           },
           "configurations": {
@@ -206,8 +204,7 @@
               "projects/shell/src/favicon.ico",
               "projects/shell/src/assets"
             ],
-            "styles": [
-            ],
+            "styles": [],
             "scripts": []
           }
         },
@@ -239,5 +236,8 @@
       }
     }
   },
-  "defaultProject": "mfe1"
+  "defaultProject": "mfe1",
+  "cli": {
+    "packageManager": "yarn"
+  }
 }
