@@ -19,7 +19,7 @@
             "polyfills": "projects/mfe1/src/polyfills.ts",
             "tsConfig": "projects/mfe1/tsconfig.app.json",
             "aot": true,
-            "plugin": "~projects/mfe1/mf.config.js",
+            "extraWebpackConfig": "projects/mfe1/webpack.extra.js",
             "assets": [
               "projects/mfe1/src/favicon.ico",
               "projects/mfe1/src/assets"
@@ -61,7 +61,7 @@
           "builder": "ngx-build-plus:dev-server",
           "options": {
             "browserTarget": "mfe1:build",
-            "plugin": "~projects/mfe1/mf.config.js",
+            "extraWebpackConfig": "projects/mfe1/webpack.extra.js",
             "port": 3000
           },
           "configurations": {
@@ -83,6 +83,7 @@
             "polyfills": "projects/mfe1/src/polyfills.ts",
             "tsConfig": "projects/mfe1/tsconfig.spec.json",
             "karmaConfig": "projects/mfe1/karma.conf.js",
+            "extraWebpackConfig": "projects/mfe1/webpack.extra.js",
             "assets": [
               "projects/mfe1/src/favicon.ico",
               "projects/mfe1/src/assets"
@@ -136,7 +137,7 @@
             "polyfills": "projects/shell/src/polyfills.ts",
             "tsConfig": "projects/shell/tsconfig.app.json",
             "aot": true,
-            "plugin": "~projects/shell/mf.config.js",
+            "extraWebpackConfig": "projects/shell/webpack.extra.js",
             "assets": [
               "projects/shell/src/favicon.ico",
               "projects/shell/src/assets"
@@ -178,7 +179,7 @@
           "builder": "ngx-build-plus:dev-server",
           "options": {
             "browserTarget": "shell:build",
-            "plugin": "~projects/shell/mf.config.js",
+            "extraWebpackConfig": "projects/shell/webpack.extra.js",
             "port": 5000
           },
           "configurations": {
@@ -200,6 +201,7 @@
             "polyfills": "projects/shell/src/polyfills.ts",
             "tsConfig": "projects/shell/tsconfig.spec.json",
             "karmaConfig": "projects/shell/karma.conf.js",
+            "extraWebpackConfig": "projects/shell/webpack.extra.js",
             "assets": [
               "projects/shell/src/favicon.ico",
               "projects/shell/src/assets"

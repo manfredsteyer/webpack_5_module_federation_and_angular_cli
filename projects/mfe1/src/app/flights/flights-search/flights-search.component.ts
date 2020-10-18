@@ -19,10 +19,13 @@ export class FlightsSearchComponent {
   }
 
   terms() {
-    // const comp = await import('../lazy/lazy.component').then(m => m.LazyComponent);
+    import('../lazy/lazy.component')
+      .then(m => m.LazyComponent)
+      .then(comp => {
+        const factory = this.cfr.resolveComponentFactory(comp);
+        this.viewContainer.createComponent(factory, null, this.injector);
+      });
 
-    // const factory = this.cfr.resolveComponentFactory(comp);
-    // this.viewContainer.createComponent(factory, null, this.injector);
   }
 
 
