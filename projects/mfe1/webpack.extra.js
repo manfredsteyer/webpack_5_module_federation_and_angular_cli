@@ -3,7 +3,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 // MFE1
 module.exports = {
   output: {
-    //publicPath: "http://localhost:3000/",
+    // publicPath: "http://localhost:3000/",
     uniqueName: "mfe1"
   },
   optimization: {
@@ -19,7 +19,13 @@ module.exports = {
         './Component': './projects/mfe1/src/app/app.component.ts',
         './Module': './projects/mfe1/src/app/flights/flights.module.ts'
       },
-      shared: ["@angular/core", "@angular/common", "@angular/router"]
+      //shared: ["@angular/core", "@angular/common", "@angular/router"]
+      shared: {
+        "@angular/core": { singleton: true, strictVersion: true }, 
+        "@angular/common": { singleton: true, strictVersion: true }, 
+        "@angular/router": { singleton: true, strictVersion: true }
+      }
+
     })
   ]
 };

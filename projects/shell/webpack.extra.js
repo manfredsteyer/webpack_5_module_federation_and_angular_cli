@@ -2,11 +2,11 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 
 module.exports = {
   output: {
-    // publicPath: "http://localhost:5000/",
     uniqueName: "shell"
   },
   optimization: {
-    // Only needed to bypass a temporary bug
+    // Only needed to bypass a temporary bug in the
+    // cli/webpack5 integration
     runtimeChunk: false
   },
   plugins: [
@@ -14,7 +14,13 @@ module.exports = {
       remotes: {
         mfe1: "mfe1@http://localhost:3000/remoteEntry.js" 
       },
-      shared: ["@angular/core", "@angular/common", "@angular/router"]
+      // Alternative:
+      // shared: ["@angular/core", "@angular/common", "@angular/router"]
+      shared: {
+        "@angular/core": { singleton: true, strictVersion: true }, 
+        "@angular/common": { singleton: true, strictVersion: true }, 
+        "@angular/router": { singleton: true, strictVersion: true }
+      }    
     })
   ],
 };
