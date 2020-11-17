@@ -20,9 +20,10 @@ module.exports = {
       },
       //shared: ["@angular/core", "@angular/common", "@angular/router"]
       shared: {
-        "@angular/core": { singleton: true, strictVersion: true }, 
-        "@angular/common": { singleton: true, strictVersion: true }, 
-        "@angular/router": { singleton: true, strictVersion: true }
+        "@angular/core": {  }, 
+        "@angular/common": {  }, 
+        "@angular/router": {  },
+        "auth-lib": { requiredVersion: false }
       }
 
     })

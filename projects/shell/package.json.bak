@@ -1,0 +1,7 @@
+{
+    "name": "shell",
+    "version": "0.0.1",
+    "dependencies": {
+        "auth-lib": "0.0.1"
+    }
+}

@@ -1,4 +1,6 @@
 import {Component, ViewChild, ViewContainerRef, Inject, Injector, ComponentFactoryResolver, OnInit} from '@angular/core';
+import { getData } from 'auth-lib';
+
 
 
 @Component({
@@ -6,6 +8,8 @@ import {Component, ViewChild, ViewContainerRef, Inject, Injector, ComponentFacto
   templateUrl: './flights-search.component.html'
 })
 export class FlightsSearchComponent {
+
+  data = getData();
 
   @ViewChild('vc', { read: ViewContainerRef, static: true })
   viewContainer: ViewContainerRef;
