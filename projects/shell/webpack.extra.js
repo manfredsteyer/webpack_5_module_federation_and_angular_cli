@@ -1,4 +1,5 @@
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
+const path = require("path");
 
 module.exports = {
   output: {
@@ -20,7 +21,10 @@ module.exports = {
         "@angular/core": {  }, 
         "@angular/common": { }, 
         "@angular/router": {  },
-        "projects/auth-lib": { import: 'auth-lib', shareKey: 'auth-lib', packageName: 'auth-lib', requiredVersion: '0.0.1' }
+        "auth-lib": { 
+          import: path.resolve(__dirname, "../../projects/auth-lib/src/public-api.ts"),
+          requiredVersion: false
+        }
       }    
     })
   ],
