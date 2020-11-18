@@ -18,9 +18,7 @@
   "resolutions": {
     "webpack": "5.5.0"
   },
-  "workspaces": ["projects/auth-lib"],
   "dependencies": {
-    "auth-lib": "0.0.1",
     "@angular/animations": "^11.0.0",
     "@angular/common": "^11.0.0",
     "@angular/compiler": "^11.0.0",

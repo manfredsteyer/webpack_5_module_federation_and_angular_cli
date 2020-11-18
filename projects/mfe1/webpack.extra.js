@@ -23,7 +23,7 @@ module.exports = {
         "@angular/core": {  }, 
         "@angular/common": {  }, 
         "@angular/router": {  },
-        "auth-lib": { requiredVersion: false }
+        "projects/auth-lib": { import: 'auth-lib', shareKey: 'auth-lib', packageName:'auth-lib', requiredVersion: '0.0.1' }
       }
 
     })
