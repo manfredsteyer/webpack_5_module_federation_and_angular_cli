@@ -1,5 +1,5 @@
 import {Component, ViewChild, ViewContainerRef, Inject, Injector, ComponentFactoryResolver, OnInit} from '@angular/core';
-import { getData } from 'auth-lib';
+import { AuthLibService, getData } from 'auth-lib';
 
 
 
@@ -10,11 +10,13 @@ import { getData } from 'auth-lib';
 export class FlightsSearchComponent {
 
   data = getData();
+  userName = this.authService.userName;
 
   @ViewChild('vc', { read: ViewContainerRef, static: true })
   viewContainer: ViewContainerRef;
 
   constructor(
+    private authService: AuthLibService,
     @Inject(Injector) private injector,
     @Inject(ComponentFactoryResolver) private cfr) { }
 
