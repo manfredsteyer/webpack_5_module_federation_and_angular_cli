@@ -23,7 +23,8 @@ module.exports = {
         "@angular/router": {  },
         "auth-lib": { 
           import: path.resolve(__dirname, "../../projects/auth-lib/src/public-api.ts"),
-          requiredVersion: false
+          version: require("../../projects/auth-lib/package.json").version,
+          requiredVersion: "^0.0.1"
         }
       }    
     })
