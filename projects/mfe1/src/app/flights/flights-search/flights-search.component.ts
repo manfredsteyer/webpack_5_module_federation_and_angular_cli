@@ -1,11 +1,12 @@
 import {Component, ViewChild, ViewContainerRef, Inject, Injector, ComponentFactoryResolver, OnInit} from '@angular/core';
-import { AuthLibService, getData } from 'auth-lib';
+import { AuthService, getData } from 'auth-lib';
 
 
 
 @Component({
   selector: 'app-flights-search',
-  templateUrl: './flights-search.component.html'
+  templateUrl: './flights-search.component.html',
+  styleUrls: ['./flights-search.component.css']
 })
 export class FlightsSearchComponent {
 
@@ -16,7 +17,7 @@ export class FlightsSearchComponent {
   viewContainer: ViewContainerRef;
 
   constructor(
-    private authService: AuthLibService,
+    private authService: AuthService,
     @Inject(Injector) private injector,
     @Inject(ComponentFactoryResolver) private cfr) { }
 

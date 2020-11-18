@@ -3,7 +3,7 @@ const path = require("path");
 
 module.exports = {
   output: {
-    uniqueName: "shell"
+    uniqueName: "shell",
   },
   optimization: {
     // Only needed to bypass a temporary bug in the
@@ -21,6 +21,8 @@ module.exports = {
         "@angular/core": {  }, 
         "@angular/common": { }, 
         "@angular/router": {  },
+        "@angular/forms": {  },
+
         "auth-lib": { 
           import: path.resolve(__dirname, "../../projects/auth-lib/src/public-api.ts"),
           requiredVersion: false

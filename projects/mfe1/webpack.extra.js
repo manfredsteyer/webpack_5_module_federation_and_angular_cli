@@ -24,6 +24,7 @@ module.exports = {
         "@angular/core": {  }, 
         "@angular/common": {  }, 
         "@angular/router": {  },
+        "@angular/forms": {  },
         "auth-lib": { 
           import: path.resolve(__dirname, "../../projects/auth-lib/src/public-api.ts"),
           requiredVersion: false 

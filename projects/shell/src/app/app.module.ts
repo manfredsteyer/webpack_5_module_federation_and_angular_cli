@@ -13,7 +13,7 @@ setData('Hello from the shell!');
   imports: [
     BrowserModule,
     RouterModule.forRoot(APP_ROUTES),
-    AuthLibModule
+    // AuthLibModule
   ],
   declarations: [
     AppComponent,

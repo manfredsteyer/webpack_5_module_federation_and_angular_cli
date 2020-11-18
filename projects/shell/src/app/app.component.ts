@@ -1,5 +1,5 @@
 import { Component, ViewChild, ViewContainerRef, ɵrenderComponent as renderComponent, Inject, Injector, ComponentFactoryResolver } from '@angular/core';
-import { AuthLibService } from 'auth-lib';
+import { AuthService } from 'auth-lib';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import { AuthLibService } from 'auth-lib';
 export class AppComponent {
   title = 'shell';
 
-  constructor(private authService: AuthLibService) {
+  constructor(private authService: AuthService) {
     this.authService.login('Max', 'NonOfYourBusiness!');
   }
 

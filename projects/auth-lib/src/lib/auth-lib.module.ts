@@ -1,12 +1,22 @@
 import { NgModule } from '@angular/core';
-import { AuthLibComponent } from './auth-lib.component';
-
-
+// import { UserComponent } from './user/user.component';
+// import { LoginComponent } from './login/login.component';
+import { CommonModule } from '@angular/common';
+import { DemoComponent } from './demo/demo.component';
+// import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AuthLibComponent],
   imports: [
+    CommonModule,
+    // FormsModule
   ],
-  exports: [AuthLibComponent]
+  declarations: [
+    // UserComponent,
+    // LoginComponent
+  DemoComponent],
+  exports: [
+    // UserComponent,
+    // LoginComponent
+  ]
 })
 export class AuthLibModule { }

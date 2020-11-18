@@ -3,8 +3,7 @@
  */
 
 
-export * from './lib/auth-lib.service';
-export * from './lib/auth-lib.component';
+export * from './lib/auth/auth.service';
 export * from './lib/auth-lib.module';
 
 let _data: string = '';

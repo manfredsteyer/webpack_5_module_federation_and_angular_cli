@@ -139,6 +139,11 @@
             "polyfills": "projects/shell/src/polyfills.ts",
             "tsConfig": "projects/shell/tsconfig.app.json",
             "aot": true,
+            
+            "sourceMap": false,
+            "extractCss": false,
+            "extractLicenses": false,
+
             "extraWebpackConfig": "projects/shell/webpack.extra.js",
             "assets": [
               "projects/shell/src/favicon.ico",
@@ -246,6 +251,7 @@
       "root": "projects/auth-lib",
       "sourceRoot": "projects/auth-lib/src",
       "prefix": "lib",
+
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
